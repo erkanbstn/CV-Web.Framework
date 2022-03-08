@@ -1,0 +1,14 @@
+﻿@model CV.Models.Entity.Tables
+@{
+    Layout = null;
+}
+
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+        @foreach (var item in Model.ResultHome)
+        {
+            <h1>@item.Name</h1>
+        }
+        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Programmer"></span></p>
+    </div>
+</section>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="u0241506_EczCVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CVAdmin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TFacts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Num1" Type="Int32" />
+    <Property Name="Title1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num2" Type="Int32" />
+    <Property Name="Title2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num3" Type="Int32" />
+    <Property Name="Title3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num4" Type="Int32" />
+    <Property Name="Title4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="THome">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Image" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TPortfolio2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TResume1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="School" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Year" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TSkills">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Num1" Type="Int32" />
+    <Property Name="Title1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num2" Type="Int32" />
+    <Property Name="Title2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num3" Type="Int32" />
+    <Property Name="Title3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num4" Type="Int32" />
+    <Property Name="Title4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num5" Type="Int32" />
+    <Property Name="Title5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Num6" Type="Int32" />
+    <Property Name="Title6" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="u0241506_EczCVEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CVAdmin" EntityType="Self.CVAdmin" />
+    <EntitySet Name="TFacts" EntityType="Self.TFacts" />
+    <EntitySet Name="THome" EntityType="Self.THome" />
+    <EntitySet Name="TPortfolio2" EntityType="Self.TPortfolio2" />
+    <EntitySet Name="TResume1" EntityType="Self.TResume1" />
+    <EntitySet Name="TSkills" EntityType="Self.TSkills" />
+    <EntitySet Name="TLinks" EntityType="u0241506_EczCVModel.TLinks" />
+    <EntitySet Name="TContact" EntityType="u0241506_EczCVModel.TContact" />
+    <EntitySet Name="TMessages" EntityType="u0241506_EczCVModel.TMessages" />
+    <EntitySet Name="TAbout" EntityType="u0241506_EczCVModel.TAbout" />
+    <EntitySet Name="TServices" EntityType="u0241506_EczCVModel.TServices" />
+    <EntitySet Name="TResume2" EntityType="u0241506_EczCVModel.TResume2" />
+    <EntitySet Name="TPortfolio1" EntityType="u0241506_EczCVModel.TPortfolio1" />
+  </EntityContainer>
+  <EntityType Name="TLinks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Link" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Url" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TContact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Call" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TMessages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Subject" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TAbout">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DescTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Birth" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="WebSite" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Age" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Degree" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Freelance" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LastDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TServices">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title5" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc5" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title6" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc6" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title7" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc7" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title8" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc8" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title9" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc9" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title10" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc10" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title11" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc11" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title12" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TDesc12" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TResume2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkPlace" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Year" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Description1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TPortfolio1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

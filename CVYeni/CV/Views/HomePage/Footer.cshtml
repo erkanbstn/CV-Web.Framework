@@ -1,0 +1,14 @@
+﻿@model CV.Models.Entity.Tables
+@{
+    Layout = null;
+}
+<footer id="footer">
+    <div class="container">
+        @foreach (var item in Model.ResultLink)
+        {
+            <div class="credits">
+                Designed by <a href="@item.Url" target="_blank">Erkan Bostan</a>
+            </div>
+        }
+    </div>
+</footer>

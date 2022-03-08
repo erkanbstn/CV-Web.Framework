@@ -1,0 +1,64 @@
+﻿@model CV.Models.Entity.Tables
+@{
+    Layout = null;
+}
+
+<section id="facts" class="facts">
+    <div class="container">
+
+        @foreach (var item in Model.ResultFacts)
+        {
+            <div class="section-title">
+                <h2>Facts</h2>
+                <p>@item.Description</p>
+            </div>
+        }
+
+        <div class="row no-gutters">
+
+            @foreach (var item2 in Model.ResultFacts)
+            {
+                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+                    <div class="count-box">
+                        <i class="bi bi-emoji-smile"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="@item2.Num1" data-purecounter-duration="1" class="purecounter"></span>
+                        <p><strong>@item2.Title1</strong></p>
+                    </div>
+                </div>
+            }
+
+            @foreach (var item3 in Model.ResultFacts)
+            {
+                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+                    <div class="count-box">
+                        <i class="bi bi-journal-richtext"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="@item3.Num2" data-purecounter-duration="1" class="purecounter"></span>
+                        <p><strong>@item3.Title2</strong></p>
+                    </div>
+                </div>
+            }
+
+            @foreach (var item4 in Model.ResultFacts)
+            {
+                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+                    <div class="count-box">
+                        <i class="bi bi-headset"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="@item4.Num3" data-purecounter-duration="1" class="purecounter"></span>
+                        <p><strong>@item4.Title3</strong></p>
+                    </div>
+                </div>
+            }
+
+            @foreach (var item5 in Model.ResultFacts)
+            {
+                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+                    <div class="count-box">
+                        <i class="bi bi-person"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="@item5.Num4" data-purecounter-duration="1" class="purecounter"></span>
+                        <p><strong>@item5.Title4</strong></p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

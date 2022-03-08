@@ -1,0 +1,48 @@
+﻿@model CV.Models.Entity.Tables
+@{
+    Layout = null;
+}
+
+<section id="resume" class="resume">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Resume</h2>
+            @foreach (var item in Model.ResultResume1)
+            {
+                <p>@item.Description</p>
+            }
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+                <h3 class="resume-title">Education</h3>
+                @foreach (var item in Model.ResultResume1)
+                {
+
+                    <div class="resume-item">
+                        <h4>@item.School</h4>
+                        <h5>@item.Year</h5>
+                        <p><em>@item.Title</em></p>
+                        <p>@item.Description2</p>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="resume-title">Professional Experience</h3>
+                @foreach (var item in Model.ResultResume2)
+                {
+                    <div class="resume-item">
+                        <h4>@item.WorkPlace</h4>
+                        <h5>@item.Year</h5>
+                        <p><em>@item.Title</em></p>
+                        <ul>
+                            <li>@item.Description1</li>
+                        </ul>
+                    </div>
+                }
+            </div>
+        </div>
+
+    </div>
+</section>

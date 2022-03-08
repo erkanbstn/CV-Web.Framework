@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="u0241506_EczCVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CVAdmin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kullanici" Type="varchar" MaxLength="50" />
+          <Property Name="Sifre" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TAbout">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Image" Type="varchar(max)" />
+          <Property Name="DescTitle" Type="varchar(max)" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="Birth" Type="varchar(max)" />
+          <Property Name="WebSite" Type="varchar(max)" />
+          <Property Name="Phone" Type="varchar(max)" />
+          <Property Name="City" Type="varchar(max)" />
+          <Property Name="Age" Type="varchar(max)" />
+          <Property Name="Degree" Type="varchar(max)" />
+          <Property Name="Email" Type="varchar(max)" />
+          <Property Name="Freelance" Type="varchar(max)" />
+          <Property Name="LastDescription" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="TContact">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Location" Type="varchar(max)" />
+          <Property Name="Email" Type="varchar(max)" />
+          <Property Name="Call" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="TFacts">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="Num1" Type="int" />
+          <Property Name="Title1" Type="varchar" MaxLength="50" />
+          <Property Name="Num2" Type="int" />
+          <Property Name="Title2" Type="varchar" MaxLength="50" />
+          <Property Name="Num3" Type="int" />
+          <Property Name="Title3" Type="varchar" MaxLength="50" />
+          <Property Name="Num4" Type="int" />
+          <Property Name="Title4" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="THome">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar(max)" />
+          <Property Name="Image" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="TLinks">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Link" Type="varchar" MaxLength="50" />
+          <Property Name="Url" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="TMessages">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar(max)" />
+          <Property Name="Email" Type="varchar(max)" />
+          <Property Name="Subject" Type="varchar(max)" />
+          <Property Name="Message" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="TPortfolio1">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="TPortfolio2">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Image" Type="varchar(max)" />
+          <Property Name="Category" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TResume1">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="School" Type="varchar(max)" />
+          <Property Name="Year" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Description2" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="TResume2">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WorkPlace" Type="varchar(max)" />
+          <Property Name="Year" Type="varchar(max)" />
+          <Property Name="Title" Type="varchar(max)" />
+          <Property Name="Description1" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="TServices">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="Title1" Type="varchar(max)" />
+          <Property Name="TDesc1" Type="varchar(max)" />
+          <Property Name="Title2" Type="varchar(max)" />
+          <Property Name="TDesc2" Type="varchar(max)" />
+          <Property Name="Title3" Type="varchar(max)" />
+          <Property Name="TDesc3" Type="varchar(max)" />
+          <Property Name="Title4" Type="varchar(max)" />
+          <Property Name="TDesc4" Type="varchar(max)" />
+          <Property Name="Title5" Type="varchar(max)" />
+          <Property Name="TDesc5" Type="varchar(max)" />
+          <Property Name="Title6" Type="varchar(max)" />
+          <Property Name="TDesc6" Type="varchar(max)" />
+          <Property Name="Title7" Type="varchar(max)" />
+          <Property Name="TDesc7" Type="varchar(max)" />
+          <Property Name="Title8" Type="varchar(max)" />
+          <Property Name="TDesc8" Type="varchar(max)" />
+          <Property Name="Title9" Type="varchar(max)" />
+          <Property Name="TDesc9" Type="varchar(max)" />
+          <Property Name="Title10" Type="varchar(max)" />
+          <Property Name="TDesc10" Type="varchar(max)" />
+          <Property Name="Title11" Type="varchar(max)" />
+          <Property Name="TDesc11" Type="varchar(max)" />
+          <Property Name="Title12" Type="varchar(max)" />
+          <Property Name="TDesc12" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="TSkills">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+          <Property Name="Num1" Type="int" />
+          <Property Name="Title1" Type="varchar" MaxLength="50" />
+          <Property Name="Num2" Type="int" />
+          <Property Name="Title2" Type="varchar" MaxLength="50" />
+          <Property Name="Num3" Type="int" />
+          <Property Name="Title3" Type="varchar" MaxLength="50" />
+          <Property Name="Num4" Type="int" />
+          <Property Name="Title4" Type="varchar" MaxLength="50" />
+          <Property Name="Num5" Type="int" />
+          <Property Name="Title5" Type="varchar" MaxLength="50" />
+          <Property Name="Num6" Type="int" />
+          <Property Name="Title6" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="u0241506_EczCVModelStoreContainer">
+          <EntitySet Name="CVAdmin" EntityType="Self.CVAdmin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TAbout" EntityType="Self.TAbout" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TContact" EntityType="Self.TContact" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TFacts" EntityType="Self.TFacts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="THome" EntityType="Self.THome" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TLinks" EntityType="Self.TLinks" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TMessages" EntityType="Self.TMessages" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TPortfolio1" EntityType="Self.TPortfolio1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TPortfolio2" EntityType="Self.TPortfolio2" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TResume1" EntityType="Self.TResume1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TResume2" EntityType="Self.TResume2" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TServices" EntityType="Self.TServices" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TSkills" EntityType="Self.TSkills" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="u0241506_EczCVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CVAdmin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TFacts">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Num1" Type="Int32" />
+          <Property Name="Title1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Num2" Type="Int32" />
+          <Property Name="Title2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Num3" Type="Int32" />
+          <Property Name="Title3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Num4" Type="Int32" />
+          <Property Name="Title4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="THome">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TPortfolio2">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TResume1">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="School" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Year" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Description2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TSkills">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Num1" Type="Int32" />
+          <Property Name="Title1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Num2" Type="Int32" />
+          <Property Name="Title2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Num3" Type="Int32" />
+          <Property Name="Title3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Num4" Type="Int32" />
+          <Property Name="Title4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Num5" Type="Int32" />
+          <Property Name="Title5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Num6" Type="Int32" />
+          <Property Name="Title6" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="u0241506_EczCVEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CVAdmin" EntityType="Self.CVAdmin" />
+          <EntitySet Name="TFacts" EntityType="Self.TFacts" />
+          <EntitySet Name="THome" EntityType="Self.THome" />
+          <EntitySet Name="TPortfolio2" EntityType="Self.TPortfolio2" />
+          <EntitySet Name="TResume1" EntityType="Self.TResume1" />
+          <EntitySet Name="TSkills" EntityType="Self.TSkills" />
+          <EntitySet Name="TLinks" EntityType="u0241506_EczCVModel.TLinks" />
+          <EntitySet Name="TContact" EntityType="u0241506_EczCVModel.TContact" />
+          <EntitySet Name="TMessages" EntityType="u0241506_EczCVModel.TMessages" />
+          <EntitySet Name="TAbout" EntityType="u0241506_EczCVModel.TAbout" />
+          <EntitySet Name="TServices" EntityType="u0241506_EczCVModel.TServices" />
+          <EntitySet Name="TResume2" EntityType="u0241506_EczCVModel.TResume2" />
+          <EntitySet Name="TPortfolio1" EntityType="u0241506_EczCVModel.TPortfolio1" />
+        </EntityContainer>
+        <EntityType Name="TLinks">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Link" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Url" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TContact">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Call" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TMessages">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Subject" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TAbout">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DescTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Birth" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="WebSite" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Age" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Degree" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Freelance" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="LastDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TServices">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title5" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc5" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title6" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc6" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title7" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc7" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title8" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc8" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title9" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc9" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title10" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc10" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title11" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc11" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title12" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TDesc12" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TResume2">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WorkPlace" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Year" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Description1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TPortfolio1">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="u0241506_EczCVModelStoreContainer" CdmEntityContainer="u0241506_EczCVEntities">
+          <EntitySetMapping Name="CVAdmin">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.CVAdmin">
+              <MappingFragment StoreEntitySet="CVAdmin">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TFacts">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TFacts">
+              <MappingFragment StoreEntitySet="TFacts">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Num1" ColumnName="Num1" />
+                <ScalarProperty Name="Title1" ColumnName="Title1" />
+                <ScalarProperty Name="Num2" ColumnName="Num2" />
+                <ScalarProperty Name="Title2" ColumnName="Title2" />
+                <ScalarProperty Name="Num3" ColumnName="Num3" />
+                <ScalarProperty Name="Title3" ColumnName="Title3" />
+                <ScalarProperty Name="Num4" ColumnName="Num4" />
+                <ScalarProperty Name="Title4" ColumnName="Title4" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="THome">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.THome">
+              <MappingFragment StoreEntitySet="THome">
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TPortfolio2">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TPortfolio2">
+              <MappingFragment StoreEntitySet="TPortfolio2">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TResume1">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TResume1">
+              <MappingFragment StoreEntitySet="TResume1">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="School" ColumnName="School" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description2" ColumnName="Description2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TSkills">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TSkills">
+              <MappingFragment StoreEntitySet="TSkills">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Num1" ColumnName="Num1" />
+                <ScalarProperty Name="Title1" ColumnName="Title1" />
+                <ScalarProperty Name="Num2" ColumnName="Num2" />
+                <ScalarProperty Name="Title2" ColumnName="Title2" />
+                <ScalarProperty Name="Num3" ColumnName="Num3" />
+                <ScalarProperty Name="Title3" ColumnName="Title3" />
+                <ScalarProperty Name="Num4" ColumnName="Num4" />
+                <ScalarProperty Name="Title4" ColumnName="Title4" />
+                <ScalarProperty Name="Num5" ColumnName="Num5" />
+                <ScalarProperty Name="Title5" ColumnName="Title5" />
+                <ScalarProperty Name="Num6" ColumnName="Num6" />
+                <ScalarProperty Name="Title6" ColumnName="Title6" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TLinks">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TLinks">
+              <MappingFragment StoreEntitySet="TLinks">
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TContact">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TContact">
+              <MappingFragment StoreEntitySet="TContact">
+                <ScalarProperty Name="Call" ColumnName="Call" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMessages">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TMessages">
+              <MappingFragment StoreEntitySet="TMessages">
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAbout">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TAbout">
+              <MappingFragment StoreEntitySet="TAbout">
+                <ScalarProperty Name="LastDescription" ColumnName="LastDescription" />
+                <ScalarProperty Name="Freelance" ColumnName="Freelance" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Degree" ColumnName="Degree" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+                <ScalarProperty Name="Birth" ColumnName="Birth" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="DescTitle" ColumnName="DescTitle" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TServices">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TServices">
+              <MappingFragment StoreEntitySet="TServices">
+                <ScalarProperty Name="TDesc12" ColumnName="TDesc12" />
+                <ScalarProperty Name="Title12" ColumnName="Title12" />
+                <ScalarProperty Name="TDesc11" ColumnName="TDesc11" />
+                <ScalarProperty Name="Title11" ColumnName="Title11" />
+                <ScalarProperty Name="TDesc10" ColumnName="TDesc10" />
+                <ScalarProperty Name="Title10" ColumnName="Title10" />
+                <ScalarProperty Name="TDesc9" ColumnName="TDesc9" />
+                <ScalarProperty Name="Title9" ColumnName="Title9" />
+                <ScalarProperty Name="TDesc8" ColumnName="TDesc8" />
+                <ScalarProperty Name="Title8" ColumnName="Title8" />
+                <ScalarProperty Name="TDesc7" ColumnName="TDesc7" />
+                <ScalarProperty Name="Title7" ColumnName="Title7" />
+                <ScalarProperty Name="TDesc6" ColumnName="TDesc6" />
+                <ScalarProperty Name="Title6" ColumnName="Title6" />
+                <ScalarProperty Name="TDesc5" ColumnName="TDesc5" />
+                <ScalarProperty Name="Title5" ColumnName="Title5" />
+                <ScalarProperty Name="TDesc4" ColumnName="TDesc4" />
+                <ScalarProperty Name="Title4" ColumnName="Title4" />
+                <ScalarProperty Name="TDesc3" ColumnName="TDesc3" />
+                <ScalarProperty Name="Title3" ColumnName="Title3" />
+                <ScalarProperty Name="TDesc2" ColumnName="TDesc2" />
+                <ScalarProperty Name="Title2" ColumnName="Title2" />
+                <ScalarProperty Name="TDesc1" ColumnName="TDesc1" />
+                <ScalarProperty Name="Title1" ColumnName="Title1" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TResume2">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TResume2">
+              <MappingFragment StoreEntitySet="TResume2">
+                <ScalarProperty Name="Description1" ColumnName="Description1" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="WorkPlace" ColumnName="WorkPlace" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TPortfolio1">
+            <EntityTypeMapping TypeName="u0241506_EczCVModel.TPortfolio1">
+              <MappingFragment StoreEntitySet="TPortfolio1">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

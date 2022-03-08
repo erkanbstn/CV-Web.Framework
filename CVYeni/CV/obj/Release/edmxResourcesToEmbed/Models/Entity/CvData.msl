@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="u0241506_EczCVModelStoreContainer" CdmEntityContainer="u0241506_EczCVEntities">
+    <EntitySetMapping Name="CVAdmin">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.CVAdmin">
+        <MappingFragment StoreEntitySet="CVAdmin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Kullanici" ColumnName="Kullanici" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TFacts">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TFacts">
+        <MappingFragment StoreEntitySet="TFacts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Num1" ColumnName="Num1" />
+          <ScalarProperty Name="Title1" ColumnName="Title1" />
+          <ScalarProperty Name="Num2" ColumnName="Num2" />
+          <ScalarProperty Name="Title2" ColumnName="Title2" />
+          <ScalarProperty Name="Num3" ColumnName="Num3" />
+          <ScalarProperty Name="Title3" ColumnName="Title3" />
+          <ScalarProperty Name="Num4" ColumnName="Num4" />
+          <ScalarProperty Name="Title4" ColumnName="Title4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THome">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.THome">
+        <MappingFragment StoreEntitySet="THome">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPortfolio2">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TPortfolio2">
+        <MappingFragment StoreEntitySet="TPortfolio2">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TResume1">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TResume1">
+        <MappingFragment StoreEntitySet="TResume1">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="School" ColumnName="School" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description2" ColumnName="Description2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TSkills">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TSkills">
+        <MappingFragment StoreEntitySet="TSkills">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Num1" ColumnName="Num1" />
+          <ScalarProperty Name="Title1" ColumnName="Title1" />
+          <ScalarProperty Name="Num2" ColumnName="Num2" />
+          <ScalarProperty Name="Title2" ColumnName="Title2" />
+          <ScalarProperty Name="Num3" ColumnName="Num3" />
+          <ScalarProperty Name="Title3" ColumnName="Title3" />
+          <ScalarProperty Name="Num4" ColumnName="Num4" />
+          <ScalarProperty Name="Title4" ColumnName="Title4" />
+          <ScalarProperty Name="Num5" ColumnName="Num5" />
+          <ScalarProperty Name="Title5" ColumnName="Title5" />
+          <ScalarProperty Name="Num6" ColumnName="Num6" />
+          <ScalarProperty Name="Title6" ColumnName="Title6" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TLinks">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TLinks">
+        <MappingFragment StoreEntitySet="TLinks">
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TContact">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TContact">
+        <MappingFragment StoreEntitySet="TContact">
+          <ScalarProperty Name="Call" ColumnName="Call" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMessages">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TMessages">
+        <MappingFragment StoreEntitySet="TMessages">
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAbout">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TAbout">
+        <MappingFragment StoreEntitySet="TAbout">
+          <ScalarProperty Name="LastDescription" ColumnName="LastDescription" />
+          <ScalarProperty Name="Freelance" ColumnName="Freelance" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Degree" ColumnName="Degree" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+          <ScalarProperty Name="Birth" ColumnName="Birth" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DescTitle" ColumnName="DescTitle" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TServices">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TServices">
+        <MappingFragment StoreEntitySet="TServices">
+          <ScalarProperty Name="TDesc12" ColumnName="TDesc12" />
+          <ScalarProperty Name="Title12" ColumnName="Title12" />
+          <ScalarProperty Name="TDesc11" ColumnName="TDesc11" />
+          <ScalarProperty Name="Title11" ColumnName="Title11" />
+          <ScalarProperty Name="TDesc10" ColumnName="TDesc10" />
+          <ScalarProperty Name="Title10" ColumnName="Title10" />
+          <ScalarProperty Name="TDesc9" ColumnName="TDesc9" />
+          <ScalarProperty Name="Title9" ColumnName="Title9" />
+          <ScalarProperty Name="TDesc8" ColumnName="TDesc8" />
+          <ScalarProperty Name="Title8" ColumnName="Title8" />
+          <ScalarProperty Name="TDesc7" ColumnName="TDesc7" />
+          <ScalarProperty Name="Title7" ColumnName="Title7" />
+          <ScalarProperty Name="TDesc6" ColumnName="TDesc6" />
+          <ScalarProperty Name="Title6" ColumnName="Title6" />
+          <ScalarProperty Name="TDesc5" ColumnName="TDesc5" />
+          <ScalarProperty Name="Title5" ColumnName="Title5" />
+          <ScalarProperty Name="TDesc4" ColumnName="TDesc4" />
+          <ScalarProperty Name="Title4" ColumnName="Title4" />
+          <ScalarProperty Name="TDesc3" ColumnName="TDesc3" />
+          <ScalarProperty Name="Title3" ColumnName="Title3" />
+          <ScalarProperty Name="TDesc2" ColumnName="TDesc2" />
+          <ScalarProperty Name="Title2" ColumnName="Title2" />
+          <ScalarProperty Name="TDesc1" ColumnName="TDesc1" />
+          <ScalarProperty Name="Title1" ColumnName="Title1" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TResume2">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TResume2">
+        <MappingFragment StoreEntitySet="TResume2">
+          <ScalarProperty Name="Description1" ColumnName="Description1" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="WorkPlace" ColumnName="WorkPlace" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TPortfolio1">
+      <EntityTypeMapping TypeName="u0241506_EczCVModel.TPortfolio1">
+        <MappingFragment StoreEntitySet="TPortfolio1">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

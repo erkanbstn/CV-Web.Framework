@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="u0241506_EczCVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CVAdmin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Kullanici" Type="varchar" MaxLength="50" />
+    <Property Name="Sifre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TAbout">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="DescTitle" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Birth" Type="varchar(max)" />
+    <Property Name="WebSite" Type="varchar(max)" />
+    <Property Name="Phone" Type="varchar(max)" />
+    <Property Name="City" Type="varchar(max)" />
+    <Property Name="Age" Type="varchar(max)" />
+    <Property Name="Degree" Type="varchar(max)" />
+    <Property Name="Email" Type="varchar(max)" />
+    <Property Name="Freelance" Type="varchar(max)" />
+    <Property Name="LastDescription" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TContact">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="varchar(max)" />
+    <Property Name="Location" Type="varchar(max)" />
+    <Property Name="Email" Type="varchar(max)" />
+    <Property Name="Call" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TFacts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Num1" Type="int" />
+    <Property Name="Title1" Type="varchar" MaxLength="50" />
+    <Property Name="Num2" Type="int" />
+    <Property Name="Title2" Type="varchar" MaxLength="50" />
+    <Property Name="Num3" Type="int" />
+    <Property Name="Title3" Type="varchar" MaxLength="50" />
+    <Property Name="Num4" Type="int" />
+    <Property Name="Title4" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="THome">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" />
+    <Property Name="Image" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="TLinks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="50" />
+    <Property Name="Url" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="TMessages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar(max)" />
+    <Property Name="Email" Type="varchar(max)" />
+    <Property Name="Subject" Type="varchar(max)" />
+    <Property Name="Message" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TPortfolio1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TPortfolio2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Image" Type="varchar(max)" />
+    <Property Name="Category" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TResume1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="School" Type="varchar(max)" />
+    <Property Name="Year" Type="varchar(max)" />
+    <Property Name="Title" Type="varchar(max)" />
+    <Property Name="Description2" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TResume2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkPlace" Type="varchar(max)" />
+    <Property Name="Year" Type="varchar(max)" />
+    <Property Name="Title" Type="varchar(max)" />
+    <Property Name="Description1" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TServices">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Title1" Type="varchar(max)" />
+    <Property Name="TDesc1" Type="varchar(max)" />
+    <Property Name="Title2" Type="varchar(max)" />
+    <Property Name="TDesc2" Type="varchar(max)" />
+    <Property Name="Title3" Type="varchar(max)" />
+    <Property Name="TDesc3" Type="varchar(max)" />
+    <Property Name="Title4" Type="varchar(max)" />
+    <Property Name="TDesc4" Type="varchar(max)" />
+    <Property Name="Title5" Type="varchar(max)" />
+    <Property Name="TDesc5" Type="varchar(max)" />
+    <Property Name="Title6" Type="varchar(max)" />
+    <Property Name="TDesc6" Type="varchar(max)" />
+    <Property Name="Title7" Type="varchar(max)" />
+    <Property Name="TDesc7" Type="varchar(max)" />
+    <Property Name="Title8" Type="varchar(max)" />
+    <Property Name="TDesc8" Type="varchar(max)" />
+    <Property Name="Title9" Type="varchar(max)" />
+    <Property Name="TDesc9" Type="varchar(max)" />
+    <Property Name="Title10" Type="varchar(max)" />
+    <Property Name="TDesc10" Type="varchar(max)" />
+    <Property Name="Title11" Type="varchar(max)" />
+    <Property Name="TDesc11" Type="varchar(max)" />
+    <Property Name="Title12" Type="varchar(max)" />
+    <Property Name="TDesc12" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="TSkills">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Num1" Type="int" />
+    <Property Name="Title1" Type="varchar" MaxLength="50" />
+    <Property Name="Num2" Type="int" />
+    <Property Name="Title2" Type="varchar" MaxLength="50" />
+    <Property Name="Num3" Type="int" />
+    <Property Name="Title3" Type="varchar" MaxLength="50" />
+    <Property Name="Num4" Type="int" />
+    <Property Name="Title4" Type="varchar" MaxLength="50" />
+    <Property Name="Num5" Type="int" />
+    <Property Name="Title5" Type="varchar" MaxLength="50" />
+    <Property Name="Num6" Type="int" />
+    <Property Name="Title6" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="u0241506_EczCVModelStoreContainer">
+    <EntitySet Name="CVAdmin" EntityType="Self.CVAdmin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAbout" EntityType="Self.TAbout" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TContact" EntityType="Self.TContact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TFacts" EntityType="Self.TFacts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="THome" EntityType="Self.THome" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TLinks" EntityType="Self.TLinks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TMessages" EntityType="Self.TMessages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TPortfolio1" EntityType="Self.TPortfolio1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TPortfolio2" EntityType="Self.TPortfolio2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TResume1" EntityType="Self.TResume1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TResume2" EntityType="Self.TResume2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TServices" EntityType="Self.TServices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TSkills" EntityType="Self.TSkills" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
